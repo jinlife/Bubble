@@ -114,6 +114,7 @@
 						<p>
 							<textarea rows="8" cols="50" name="text" id="textarea" class="form-control" required ><?php $this->remember('text'); ?></textarea>
 						</p>
+						<p><?php Captcha_Plugin::output(); ?></p>
 						<p>
 							<button type="submit" class="btn btn-outline-success" id="add-comment-button" style="float: right;"><?php _e('提交评论'); ?></button>
 						</p>

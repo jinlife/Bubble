@@ -75,6 +75,8 @@
 						<?php else: ?>
 							<li class="nav-item"><a class="nav-link" href="<?php $this->options->adminUrl('login.php'); ?>">登录</a></li>
 						<?php endif; ?>
+						<li class="nav-item"><a class="nav-link" href="<?php $this->options->feedUrl(); ?>"><?php _e('文章 RSS'); ?></a></li>
+						<li class="nav-item"><a class="nav-link" href="<?php $this->options->commentsFeedUrl(); ?>"><?php _e('评论 RSS'); ?></a></li>
 					</ul>
 				</div>
 			</div>

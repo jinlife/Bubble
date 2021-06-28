@@ -120,6 +120,15 @@
 								<a class="nav-link" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
 							</li>
 						<?php endwhile; ?>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" class="nav-link" data-toggle="dropdown" role="button">
+							<i class="ni ni-collection d-lg-none"></i>
+							<span class="nav-link-inner--text">分类</span>
+							</a>
+							<div class="dropdown-menu">
+								<?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
+							</div>
+						</li>
 						<?php
 							$links = explode("$@!$", $this->options->headerLinks);
 							foreach ($links as $key => $value) {

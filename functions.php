@@ -377,7 +377,7 @@ function printAricle($that, $flag) { ?>
 		<object class="list-image-card-section">
 			<div class="container">
 				<div class="content list-card-content">
-					<h1><?php $that->title() ?></h1>
+					<h1><?php $that->sticky(); $that->title() ?></h1>
 					<div class="list-object">
 						<span class="list-tag"><i class="fa fa-calendar-o" aria-hidden="true"></i> <time datetime="<?php $that->date('c'); ?>"><?php $that->date();?></time></span>
 						<span class="list-tag"><i class="fa fa-comments-o" aria-hidden="true"></i> <?php $that->commentsNum('%d');?> 条评论</span>
